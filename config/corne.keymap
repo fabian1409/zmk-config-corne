@@ -43,9 +43,9 @@
         nav_layer {
             label = "NAV";
             bindings = <
-&trans  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6  &kp N7       &kp N8       &kp N9        &kp N0  &trans
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &kp LEFT      &mt RIGHT_SHIFT DOWN  &mt RCTRL UP_ARROW  &mt RIGHT_ALT RIGHT  &trans  &trans
-&trans  &kp HOME          &kp END           &kp PG_UP         &kp PG_DN         &trans        &trans        &trans                &trans              &trans               &trans  &trans
+&trans  &kp N1            &kp N2            &kp N3            &kp N4            &kp N5        &kp N6          &kp N7                &kp N8              &kp N9               &kp N0  &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &kp LEFT        &mt RIGHT_SHIFT DOWN  &mt RCTRL UP_ARROW  &mt RIGHT_ALT RIGHT  &trans  &trans
+&trans  &kp HOME          &kp END           &kp PG_UP         &kp PG_DN         &trans        &trans          &trans                &trans              &trans               &trans  &trans
                                    &trans          &trans         &trans          &mo 3                &trans  &trans
             >;
         };
@@ -55,21 +55,20 @@
             bindings = <
 &trans  &kp EXCL  &kp AT             &kp HASH                &kp DLLR                         &kp PRCNT         &kp CARET         &kp AMPS                           &kp ASTRK                &kp MINUS  &kp EQUAL  &trans
 &trans  &trans    &kp DOUBLE_QUOTES  &mt LCTRL LEFT_BRACKET  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE   &mt RIGHT_SHIFT RIGHT_PARENTHESIS  &mt RCTRL RIGHT_BRACKET  &kp UNDER  &kp PLUS   &trans
-&trans  &trans    &kp SINGLE_QUOTE   &kp BACKSLASH           &kp PIPE                         &kp LT            &kp GREATER_THAN  &kp TILDE                          &kp GRAVE                &trans     &trans  &trans
+&trans  &trans    &kp SINGLE_QUOTE   &kp BACKSLASH           &kp PIPE                         &kp LT            &kp GREATER_THAN  &kp TILDE                          &kp GRAVE                &trans     &trans     &trans
                                       &trans        &trans        &mo 3          &trans  &trans  &trans
             >;
         };
 
-/*        sys_layer {
+        sys_layer {
             label = "SYS";
             bindings = <
-&trans  &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12     &trans
+&trans  &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
 &trans  &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                      &trans        &trans  &trans    &trans  &trans  &trans
             >;
         };
-*/
     };
 
 };
