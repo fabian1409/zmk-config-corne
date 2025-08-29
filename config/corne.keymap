@@ -25,6 +25,7 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp GT>;
             label = "ARROW";
+            wait-ms = <0>;
         };
 
         turbofish: tubofish {
@@ -32,6 +33,7 @@
             #binding-cells = <0>;
             bindings = <&kp COLON &kp COLON &kp LT &kp GT &kp LEFT>;
             label = "TUBOFISH";
+            wait-ms = <0>;
         };
 
         derive: derive {
@@ -39,6 +41,7 @@
             #binding-cells = <0>;
             bindings = <&kp POUND &kp LBKT &kp D &kp E &kp R &kp I &kp V &kp E &kp LPAR &kp LS(D) &kp E &kp B &kp U &kp G &kp COMMA &kp SPACE &kp LS(C) &kp L &kp O &kp N &kp E &kp COMMA &kp SPACE &kp LS(C) &kp O &kp P &kp Y &kp RPAR &kp RBKT>;
             label = "DERIVE";
+            wait-ms = <0>;
         };
     };
 
