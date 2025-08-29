@@ -19,32 +19,6 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    macros {
-        arrow: arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
-            label = "ARROW";
-            wait-ms = <0>;
-        };
-
-        turbofish: tubofish {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp COLON &kp LT &kp GT &kp LEFT>;
-            label = "TUBOFISH";
-            wait-ms = <0>;
-        };
-
-        derive: derive {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp POUND &kp LBKT &kp D &kp E &kp R &kp I &kp V &kp E &kp LPAR &kp LS(D) &kp E &kp B &kp U &kp G &kp COMMA &kp SPACE &kp LS(C) &kp L &kp O &kp N &kp E &kp COMMA &kp SPACE &kp LS(C) &kp O &kp P &kp Y &kp RPAR &kp RBKT>;
-            label = "DERIVE";
-            wait-ms = <0>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -71,10 +45,10 @@
         sym_layer {
             label = "SYM";
             bindings = <
-&trans  &kp EXCL        &kp AT                     &kp HASH              &kp DLLR                         &kp PRCNT            &kp CARET  &kp AMPS  &kp ASTRK   &kp MINUS       &kp EQUAL      &trans
-&trans  &mt LGUI TILDE  &mt LEFT_BRACKET LEFT_ALT  &mt LCTRL LEFT_BRACE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp DOUBLE_QUOTES    &trans     &trans    &trans      &mt UNDER RGUI  &kp PLUS       &trans
-&trans  &kp GRAVE       &kp RIGHT_BRACKET          &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS            &kp SINGLE_QUOTE     &derive    &arrow    &turbofish  &kp PIPE        &kp BACKSLASH  &trans
-                                                   &trans                &trans                           &mo 3                &trans     &trans    &trans
+&trans  &kp EXCL        &kp AT                     &kp HASH              &kp DLLR                         &kp PRCNT            &kp CARET  &kp AMPS         &kp ASTRK     &kp MINUS       &kp PLUS       &trans
+&trans  &mt LGUI TILDE  &mt LEFT_BRACKET LEFT_ALT  &mt LCTRL LEFT_BRACE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp DOUBLE_QUOTES    &kp LEFT   &mt RSHIFT DOWN  &mt RCTRL UP  &mt RALT RIGHT  &mt PIPE RGUI  &trans
+&trans  &kp GRAVE       &kp RIGHT_BRACKET          &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS            &kp SINGLE_QUOTE     &trans     &kp UNDERSCORE   &kp EQUAL     &trans          &kp BACKSLASH  &trans
+                                                   &trans                &trans                           &mo 3                &trans     &trans           &trans
             >;
         };
 
