@@ -45,10 +45,10 @@
         sym_layer {
             label = "SYM";
             bindings = <
-&trans  &kp EXCL        &kp AT                     &kp HASH              &kp DLLR                         &kp PRCNT            &kp CARET  &kp AMPS         &kp ASTRK     &kp MINUS       &kp PLUS       &trans
-&trans  &mt LGUI TILDE  &mt LEFT_BRACKET LEFT_ALT  &mt LCTRL LEFT_BRACE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp DOUBLE_QUOTES    &kp LEFT   &mt RSHIFT DOWN  &mt RCTRL UP  &mt RALT RIGHT  &mt PIPE RGUI  &trans
-&trans  &kp GRAVE       &kp RIGHT_BRACKET          &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS            &kp SINGLE_QUOTE     &trans     &kp UNDERSCORE   &kp EQUAL     &trans          &kp BACKSLASH  &trans
-                                                   &trans                &trans                           &mo 3                &trans     &trans           &trans
+&trans  &kp EXCL        &kp AT                 &kp HASH              &kp DLLR                         &kp PRCNT            &kp CARET  &kp AMPS         &kp ASTRK     &kp MINUS       &kp PLUS       &trans
+&trans  &mt LGUI TILDE  &mt LALT LEFT_BRACKET  &mt LCTRL LEFT_BRACE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp DOUBLE_QUOTES    &kp LEFT   &mt RSHIFT DOWN  &mt RCTRL UP  &mt RALT RIGHT  &mt PIPE RGUI  &trans
+&trans  &kp GRAVE       &kp RIGHT_BRACKET      &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS            &kp SINGLE_QUOTE     &trans     &kp UNDERSCORE   &kp EQUAL     &trans          &kp BACKSLASH  &trans
+                                               &trans                &trans                           &mo 3                &trans     &trans           &trans
             >;
         };
 
