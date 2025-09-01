@@ -19,6 +19,50 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "ARROW";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        turbofish: turbofish {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp COLON &kp LT &kp GT>;
+            label = "TURBOFISH";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+    };
+
+    behaviors {
+        arrow_mod_tap: arrow_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ARROW_MOD_TAP";
+            bindings = <&kp>, <&arrow>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+        };
+
+        turbofish_mod_tap: turbofish_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TURBOFISH_MOD_TAP";
+            bindings = <&kp>, <&turbofish>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -45,10 +89,10 @@
         sym_layer {
             label = "SYM";
             bindings = <
-&trans  &kp EXCL        &kp AT                 &kp HASH              &kp DLLR                         &kp PRCNT            &kp CARET    &kp AMPS               &kp ASTRK        &kp MINUS      &kp PLUS       &trans
-&trans  &mt LGUI TILDE  &mt LALT LEFT_BRACKET  &mt LCTRL LEFT_BRACE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp DOUBLE_QUOTES    &key_repeat  &mt RSHIFT UNDERSCORE  &mt RCTRL EQUAL  &mt RALT PLUS  &mt RGUI PIPE  &trans
-&trans  &kp GRAVE       &kp RIGHT_BRACKET      &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS            &kp SINGLE_QUOTE     &trans       &trans                 &trans           &trans         &kp BACKSLASH  &trans
-                                               &trans                &trans                           &mo 3                &trans       &trans                 &trans
+&trans  &kp EXCL        &kp AT                 &kp HASH              &kp DLLR                         &kp PRCNT            &kp CARET  &kp AMPS                 &kp ASTRK                   &kp MINUS            &kp EQUAL      &trans
+&trans  &mt LGUI TILDE  &mt LALT LEFT_BRACKET  &mt LCTRL LEFT_BRACE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &kp DOUBLE_QUOTES    &kp PIPE   &arrow_mod_tap RSHIFT 0  &turbofish_mod_tap RCTRL 0  &mt RALT UNDERSCORE  &mt RGUI PLUS  &trans
+&trans  &kp GRAVE       &kp RIGHT_BRACKET      &kp RIGHT_BRACE       &kp RIGHT_PARENTHESIS            &kp SINGLE_QUOTE     &trans     &trans                   &trans                      &trans               &kp BACKSLASH  &trans
+                                               &trans                &trans                           &mo 3                &trans     &trans                   &trans
             >;
         };
 
