@@ -91,7 +91,7 @@
 &trans  &kp N1            &kp N2            &kp N3            &kp N4            &kp N5        &kp N6    &kp N7                &kp N8              &kp N9               &kp N0  &trans
 &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &kp LEFT  &mt RIGHT_SHIFT DOWN  &mt RCTRL UP_ARROW  &mt RIGHT_ALT RIGHT  &trans  &trans
 &trans  &kp PRINTSCREEN   &kp K_MUTE        &kp C_VOL_DN      &kp C_VOL_UP      &trans        &kp HOME  &kp PAGE_DOWN         &kp PAGE_UP         &kp END              &trans  &trans
-                                            &trans            &trans            &trans        &mo 3     &trans                &tog 4
+                                            &trans            &trans            &trans        &mo 3     &trans                &trans
             >;
         };
 
